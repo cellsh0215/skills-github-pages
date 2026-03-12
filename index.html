@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Leftover Buddy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f7fbf8;
+color:#333;
+}
+
+/* CONTENT WIDTH FOR PDF */
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px;
+}
+
+/* HEADINGS */
+
+h1{
+font-size:42px;
+color:#1f7a3d;
+margin-bottom:10px;
+}
+
+h2{
+font-size:28px;
+color:#1f7a3d;
+margin-bottom:15px;
+}
+
+h3{
+font-size:18px;
+margin-bottom:8px;
+}
+
+section{
+margin-bottom:50px;
+}
+
+/* HERO */
+
+.hero{
+background:#e8f5e9;
+padding:40px;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+}
+
+.hero-text{
+max-width:60%;
+}
+
+.hero button{
+background:#27ae60;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:25px;
+cursor:pointer;
+}
+
+/* APP CARD */
+
+.app-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+width:260px;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+padding:6px 0;
+font-size:14px;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.stat{
+background:#1f7a3d;
+color:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.stat h3{
+font-size:28px;
+}
+
+/* FEATURE CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* MAP */
+
+.map{
+background:#e8f5e9;
+padding:25px;
+border-radius:10px;
+}
+
+.map-grid{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:6px;
+margin-top:10px;
+}
+
+.map-grid div{
+background:#2ecc71;
+height:25px;
+border-radius:4px;
+}
+
+/* SUMMARY */
+
+.summary{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.summary-card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* FAMILY */
+
+.family{
+background:#f1f8f4;
+padding:25px;
+border-radius:10px;
+}
+
+.member{
+display:flex;
+justify-content:space-between;
+padding:6px 0;
+}
+
+/* TESTIMONIAL */
+
+.testimonial{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+font-style:italic;
+}
+
+/* SIGNUP */
+
+.signup{
+text-align:center;
+}
+
+.signup input{
+padding:10px;
+width:220px;
+border:1px solid #ccc;
+border-radius:20px;
+margin-right:10px;
+}
+
+.signup button{
+background:#1f7a3d;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:20px;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:30px;
+text-align:center;
+font-size:13px;
+color:#666;
+}
+
+/* PRINT SETTINGS FOR PDF */
+
+@media print{
+
+body{
+background:white;
+}
+
+.hero{
+page-break-inside:avoid;
+}
+
+.cards{
+page-break-inside:avoid;
+}
+
+.stats{
+page-break-inside:avoid;
+}
+
+.summary{
+page-break-inside:avoid;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Leftover Buddy</h1>
+
+<p>
+Track food expiry dates, reduce waste, and monitor your environmental impact.
+</p>
+
+<button>Invite Family</button>
+
+</div>
+
+<div class="app-card">
+
+<h3>My Fridge</h3>
+
+<div class="item">🥛 Milk <span>2 days</span></div>
+<div class="item">🥬 Spinach <span>3 days</span></div>
+<div class="item">🍗 Chicken <span>1 day</span></div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Food Waste Statistics</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3>1/3</h3>
+<p>Food wasted globally</p>
+</div>
+
+<div class="stat">
+<h3>8%</h3>
+<p>Global emissions</p>
+</div>
+
+<div class="stat">
+<h3>$1T</h3>
+<p>Food wasted yearly</p>
+</div>
+
+<div class="stat">
+<h3>2030</h3>
+<p>UN waste reduction goal</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>The Problem</h2>
+
+<p>
+Households waste food because they forget what they have or when it expires.
+Leftover Buddy helps families track food and reduce waste while saving money.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Key Features</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Barcode Scanner</h3>
+<p>Scan groceries to automatically track expiry dates.</p>
+</div>
+
+<div class="card">
+<h3>Green Action Map</h3>
+<p>See your household's environmental impact compared to nearby users.</p>
+</div>
+
+<div class="card">
+<h3>Monthly Summary</h3>
+<p>Track money saved and emissions reduced.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="map">
+
+<h2>Green Action Map</h2>
+
+<p>Community sustainability activity</p>
+
+<div class="map-grid">
+
+<div></div><div></div><div></div><div></div><div></div><div></div>
+<div></div><div></div><div></div><div></div><div></div><div></div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Monthly Summary</h2>
+
+<div class="summary">
+
+<div class="summary-card">
+<h3>£46</h3>
+<p>Money saved</p>
+</div>
+
+<div class="summary-card">
+<h3>12</h3>
+<p>Meals rescued</p>
+</div>
+
+<div class="summary-card">
+<h3>8kg</h3>
+<p>CO₂ reduced</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="family">
+
+<h2>Family Management</h2>
+
+<div class="member">Alex (You)</div>
+<div class="member">Jamie – Added groceries</div>
+<div class="member">Sam – Completed food check</div>
+
+</section>
+
+
+<section>
+
+<h2>Customer Feedback</h2>
+
+<div class="testimonial">
+
+“Leftover Buddy helped our family save money and reduce food waste every week.”
+
+</div>
+
+</section>
+
+
+<section class="signup">
+
+<h2>Join the Movement</h2>
+
+<input placeholder="Enter email">
+<button>Sign Up</button>
+
+</section>
+
+
+<footer>
+
+<p>Leftover Buddy – Reducing food waste together</p>
+<p>© 2026</p>
+
+</footer>
+
+</div>
+
+</body>
+</html>
